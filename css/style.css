@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+--Strong-Cyan: hsl(171, 66%, 44%) ;
+--Light-Blue: hsl(233, 100%, 69%) ;
+--Dark-Grayish-Blue: hsl(210, 10%, 33%) ;
+--Grayish-Blue: hsl(201, 11%, 66%) ;
+--Font-size: 18px ;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: var(--Font-size);
+    margin: 0;
+    padding: 0;
+}
+/* header styling start */
+header {
+    width: 100%;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fw-bolder{
+    color: var(--Dark-Grayish-Blue);
+}
+.firstP ,.px-5{
+color: var(--Grayish-Blue);
+}
+.buttons-container{
+    margin-top: 30px;
+}
+.buttons-container a {
+    text-decoration: none;
+}
+.btn.IOS{
+    background-color: var(--Strong-Cyan);
+    border-radius: 40px;
+    width: 180px;
+    color: white;
+    height: 45px;
+    font-weight: 700;
+    box-shadow: 0px 2px 1px 1px hsl(171, 68%, 33%);
+
+}
+.btn.MAC {
+    background-color: var(--Light-Blue);
+    border-radius: 40px;
+    width: 180px;
+    color: white;
+    height: 45px;
+    margin-left: 20px;
+    font-weight: 700;
+    box-shadow: 0px 2px 1px 1px hsl(233, 52%, 45%);
+}
+.btn.IOS:hover {
+opacity: .6;
+}
+.btn.MAC:hover {
+opacity: .6;}
+/*header styling end */
+/*1stSection styling start */
+.fw-bolder .secOne {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 18px;
+}
+.pSecondSection{
+color: var(--Grayish-Blue);
+font-size: 16px;
+padding: 0 180px 0 0;
+}
+/*1stSection styling end */
+
+/* 2nd section style start */
+.sectionTwoImg {
+margin-top: 30px;
+}
+/* 2nd section style end */
+/* 3rd section style start */
+
+.row.d-flex.justify-content-between.align-items-center{
+    width: 100%;
+    margin: 80px 0 80px 0;
+}
+/* 3rd section style end */
+
+/* footer style start */
+footer{
+    background-color:hsl(192, 14%, 93%);
+    width: 100%;
+    height: 100%;
+}
+.footerImg{
+    width: 40px;
+
+}
+.FooterText
+{
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.FooterText:hover {
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+
+.fa-brands.fa-square-facebook:hover ,.fa-brands.fa-twitter:hover , .fa-brands.fa-instagram:hover{
+    color: var(--Strong-Cyan) !important;
+    cursor: pointer;
+}
+
+.attribution a {
+    color: var(--Strong-Cyan);
+}
+/* responsive style  */
+@media (max-width:750px) {
+    body{
+        width: 100%;
+    }
+    header , section {
+        padding: 15px;
+    }
+    .section-container.d-flex.flex-column.align-items-center.m-5 {
+        width: 100%;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .text-center.w-75 {
+        margin-top: 30px;
+        width: 100% !important;
+    }
+    .text-center.w-75 .px-5 ,.firstP{
+        padding: 0 !important;
+        font-size: 14px;
+    }
+        .buttons-container {
+        width: 100%;
+    }
+    .buttons-container a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+ }
+ .btn.IOS{
+    width: 90%;
+ }
+ .btn.MAC{
+    width: 90%;
+    margin: 15px 0 0 0 !important;
+ }
+
+ .text-center.w-50 {
+    width: 100% !important;
+ }
+ .search ,.pSecondSection , .sync.my-5 , .history {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    padding: 10px !important;
+    margin: 30px 0 0 0  !important;
+    text-align: center;
+ }
+ .sectionTwoImg img {
+    width: 300px;
+ }
+ .my-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .col-md-5.offset-1{
+    margin: 0 !important;
+    padding: 0 !important   ;
+ }
+ footer .col-md-6  .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .footerImg {
+    margin-bottom: 10px ;
+ }
+ .attribution  {text-align: center;
+font-size: 14px;}
+ .col-md-2 {
+    padding: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+ }
+ header img {
+    width: 100px;
+ }
+}
